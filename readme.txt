@@ -15,7 +15,7 @@ Cocok digunakan untuk menampilkan daftar ongkos kirim dari JNE, TIKI atau yang l
 
 Database harga hanya menggunakan file PHP untuk menyimpan daftar harga dan daerahnya, pengeditan harga dan nama daerah harus dilakukkan secara manual melalui plugin editor atau menggunakan FTP.
 
-**[Laporkan Bug dan support](http://balitechy.com/wp-plugins/wp-ecommerce-indoshipping/)**
+[**Laporkan Bug dan support**](http://balitechy.com/wp-plugins/wp-ecommerce-indoshipping/)
 
 == Installation ==
 
