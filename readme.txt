@@ -15,7 +15,7 @@ Cocok digunakan untuk menampilkan daftar ongkos kirim dari JNE, TIKI atau yang l
 
 Database harga hanya menggunakan file PHP untuk menyimpan daftar harga dan daerahnya, pengeditan harga dan nama daerah harus dilakukkan secara manual melalui plugin editor atau menggunakan FTP.
 
-**[Laporkan Bug dan support](http://balitechy.com/wp-plugins/wp-ecommerce-indoshipping/)**
+[**Laporkan Bug dan support**](http://balitechy.com/wp-plugins/wp-ecommerce-indoshipping/)
 
 == Installation ==
 
@@ -23,15 +23,15 @@ Proses instalasi sangatlah mudah, sama dengan melakukkan instalasi plugin WordPr
 
 1. Plugin ini adalah sebuah modul shipping dari [WP E-Commerce](http://wordpress.org/extend/plugins/wp-e-commerce/), maka sebelum plugin ini diinstall, plugin WP E-commerce harus sudah terinstall terlebih dahulu.
 
-2. Instalasi dapat dilakukan dengan 2 cara:
+1. Instalasi dapat dilakukan dengan 2 cara:
 
-- cara yang pertama adalah dengan langsung melalui plugin installer WordPress, plugin ini sudah terdapat di repository plugin WordPress.org jadi bisa langsung diinstall. -
+- cara yang pertama adalah dengan langsung melalui plugin installer WordPress, plugin ini sudah terdapat di repository plugin WordPress.org jadi bisa langsung diinstall.
 
 - Cara ke-dua adalah dengan mendownload plugin ini terlebih dahulu, setelah itu bisa diupload ke directory /wp-content/plugins/, setelah itu tinggal diaktifkan dari plugin manager WordPress.
 
-3. Setelah terinstall dan aktif, masuk ke bagian setting Shipping WP E-commerce, dan centang Nama shipping ini untuk mengintegrasikannya dengan WP e-commerce.
+1. Setelah terinstall dan aktif, masuk ke bagian setting Shipping WP E-commerce, dan centang Nama shipping ini untuk mengintegrasikannya dengan WP e-commerce.
 
-4. Jangan lupa untuk mengganti nama Shipping sesuai dengan Jasa pengiriman yang anda pakai.
+1. Jangan lupa untuk mengganti nama Shipping sesuai dengan Jasa pengiriman yang anda pakai.
 
 **PERHATIAN :
 Plugin ini hanya akan berfungsi dengan baik apabila modul shipping ini diaktifkan sendiri. Modul shipping lain harap jangan diaktifkan.**
