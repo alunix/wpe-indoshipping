@@ -3,7 +3,7 @@ Contributors: ekaputra07
 Tags: wp e-commerce, shipping plugin, Indonesian Shipping plugin, JNE shipping, TIKI shipping
 Requires at least: 2.8
 Tested up to: 3.1.2
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 
 Plugin shipping Indonesia yang khusus untuk diintegrasikan dengan plugin WP-Ecommerce.
 
@@ -50,6 +50,9 @@ Maaf, plugin ini mutlak memerlukan javascript.
 
 == Changelog ==
 
+= 1.2.1 =
+* Bug fixed, Ketika harga di klik, shipping belum berubah.
+
 = 1.2.0 =
 * Display stabil di semua browser.
 * Metode baru search propinsi, berbasis Javascript, dijamin lebih cepat tanpa load halaman berulang kali.
@@ -61,4 +64,12 @@ Maaf, plugin ini mutlak memerlukan javascript.
 = 1.0 =
 * Initial Release
 * Database harga dan daerah berupa file PHP.
+
+== Upgrade Notice ==
+
+= 1.2.1 =
+Segera upgrade ke versi ini, bug pada versi 1.2.0 sudah diperbaiki.
+
+= 1.2.0 =
+Dalam versi ini terdapat bug pada nilai shipping.
 
