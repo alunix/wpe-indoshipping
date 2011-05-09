@@ -102,9 +102,10 @@ class wpe_indoshipping {
     function load_all_kota($weight){
         include 'daerah.db.php';
         $listkota = array();
+        $listkota = array('ERROR : Javascript is disabled! Please Enable it.'=>0);
         foreach($daerah as $prov=>$kotas){
                 foreach($kotas as $kota=>$ongkir){
-                    $listkota[$prov.' &raquo; <strong>'.$kota.'</strong> ('.$weight.' Kg)'] = $ongkir*$weight;
+                    $listkota[$prov.' - '.$kota] = $ongkir*$weight;
                     }
             }
         return $listkota;

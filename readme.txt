@@ -1,31 +1,40 @@
 === WPE Indoshipping ===
 Contributors: ekaputra07
-Tags: e-commerce, shipping, Indonesian Shipping, JNE, TIKI
+Tags: wp e-commerce, shipping plugin, Indonesian Shipping plugin, JNE shipping, TIKI shipping
 Requires at least: 2.8
 Tested up to: 3.1.2
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 
 Plugin shipping Indonesia yang khusus untuk diintegrasikan dengan plugin WP-Ecommerce.
 
 == Description ==
 
-Dengan Plugin ini maka anda dapat menampilkan daftar ongkos kirim per daerah yang anda pilih.
-Cocok digunakan untuk menampilkan ongkos kirim dari JNE, TIKI atau yang lainnya.
-Hanya menggunakan file PHP untuk menyimpan daftar harga dan daerahnya, pengeditan harga dan nama daerah harus dilakukkan secara manual.
+Dengan **WPE Indoshipping** maka anda dapat menampilkan daftar ongkos kirim per daerah di Indonesia yang anda pilih.
+
+Cocok digunakan untuk menampilkan daftar ongkos kirim dari JNE, TIKI atau yang lainnya dan secara langsung akan berpengaruh pada nilai order anda.
+
+Database harga hanya menggunakan file PHP untuk menyimpan daftar harga dan daerahnya, pengeditan harga dan nama daerah harus dilakukkan secara manual melalui plugin editor atau menggunakan FTP.
+
+**[Laporkan Bug dan support](http://balitechy.com/wp-plugins/wp-ecommerce-indoshipping/)**
 
 == Installation ==
 
-Untuk menggunakkan nya, yang perlu anda siapkan adalah:
+Proses instalasi sangatlah mudah, sama dengan melakukkan instalasi plugin WordPress lainnya.
 
-1. Plugin WP e-Commerce(http://wordpress.org/extend/plugins/wp-e-commerce/)
-Setelah Plugin WP e-commerce terinstall, maka bisa dilanjutkan dengan menginstall plugin ini,
-2. setelah aktif masuk ke bagian setting Shipping WP e-country, dan centang Nama shipping ini untuk mengintegrasikannya dengan WP e-commerce.
-3. Jangan lupa untuk mengganti nama Shipping sesuai dengan Jasa pengiriman yang anda pakai.
+1. Plugin ini adalah sebuah modul shipping dari [WP E-Commerce](http://wordpress.org/extend/plugins/wp-e-commerce/), maka sebelum plugin ini diinstall, plugin WP E-commerce harus sudah terinstall terlebih dahulu.
 
-/*
- * PERHATIAN :
- * Plugin ini hanya akan berfungsi dengan baik apabila modul shipping ini diaktifkan sendiri. Modul shipping lain harap jangan diaktifkan.
- */
+2. Instalasi dapat dilakukan dengan 2 cara:
+
+- cara yang pertama adalah dengan langsung melalui plugin installer WordPress, plugin ini sudah terdapat di repository plugin WordPress.org jadi bisa langsung diinstall. -
+
+- Cara ke-dua adalah dengan mendownload plugin ini terlebih dahulu, setelah itu bisa diupload ke directory /wp-content/plugins/, setelah itu tinggal diaktifkan dari plugin manager WordPress.
+
+3. Setelah terinstall dan aktif, masuk ke bagian setting Shipping WP E-commerce, dan centang Nama shipping ini untuk mengintegrasikannya dengan WP e-commerce.
+
+4. Jangan lupa untuk mengganti nama Shipping sesuai dengan Jasa pengiriman yang anda pakai.
+
+**PERHATIAN :
+Plugin ini hanya akan berfungsi dengan baik apabila modul shipping ini diaktifkan sendiri. Modul shipping lain harap jangan diaktifkan.**
 
 == Frequently Asked Questions ==
 
@@ -41,6 +50,9 @@ Maaf, plugin ini mutlak memerlukan javascript.
 
 == Changelog ==
 
+= 1.2.1 =
+* Bug fixed, Ketika harga di klik, shipping belum berubah.
+
 = 1.2.0 =
 * Display stabil di semua browser.
 * Metode baru search propinsi, berbasis Javascript, dijamin lebih cepat tanpa load halaman berulang kali.
@@ -52,4 +64,12 @@ Maaf, plugin ini mutlak memerlukan javascript.
 = 1.0 =
 * Initial Release
 * Database harga dan daerah berupa file PHP.
+
+== Upgrade Notice ==
+
+= 1.2.1 =
+Segera upgrade ke versi ini, bug pada versi 1.2.0 sudah diperbaiki.
+
+= 1.2.0 =
+Dalam versi ini terdapat bug pada nilai shipping.
 
