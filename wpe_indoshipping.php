@@ -2,7 +2,7 @@
 /*
  Plugin Name: WPE Indoshipping
  Plugin URI: http://balitechy.com/wp-plugins/wp-ecommerce-indoshipping/
- Description: Indonesian typical Shipping Module For WP E-Commerce
+ Description: Indonesian typical Shipping Module For WP E-Commerce, dapatkan versi PRO sudah tersedia sekarang. <a href="http://balitechy.com/wp-plugins/wpe-indoshipping-pro/"><strong>WPE Indoshipping Pro</strong></a>
  Version: 1.2.1
  Author: Putu Eka Putra
  Author URI: http://balitechy.com/
