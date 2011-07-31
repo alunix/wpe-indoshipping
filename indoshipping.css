@@ -16,7 +16,7 @@ padding:10px;
 display:block;
 }
 
-#sel_propinsi{
+#sel_propinsi, #sel_kota{
 display:block;
 padding:8px;
 width:100%;
@@ -27,21 +27,7 @@ font-size:12px;
 font-family:arial,verdana;
 margin:0 auto;
 }
-.wpe-credit a{
-display:block;
-text-align:right;
-font-size:10px;
-margin:5px 0 0 0;
-padding:0 5px;
-font-weight:normal;
-text-decoration:none;
-text-transform:lowercase;
-float:right;
-text-decoration:none;
-color:#555;
-font-family:arial,verdana;
-}
-.wpe-credit a:hover{
-color:red;
+td.wpsc_shipping_quote_name, td.wpsc_shipping_quote_price, td.wpsc_shipping_quote_radio{
+display:none;
 }
 

@@ -3,7 +3,7 @@
  Plugin Name: WPE Indoshipping
  Plugin URI: http://balitechy.com/wp-plugins/wp-ecommerce-indoshipping/
  Description: Indonesian typical Shipping Module For WP E-Commerce
- Version: 1.2.1
+ Version: 1.3.0
  Author: Putu Eka Putra
  Author URI: http://balitechy.com/
 */
@@ -76,6 +76,7 @@ class wpe_indoshipping {
 	}
 
 	function getQuote() {
+	global $wpsc_cart;
 
 		if (isset($_POST['country'])) {
 			$country = $_POST['country'];
@@ -102,7 +103,6 @@ class wpe_indoshipping {
     function load_all_kota($weight){
         include 'daerah.db.php';
         $listkota = array();
-        $listkota = array('ERROR : Javascript is disabled! Please Enable it.'=>0);
         foreach($daerah as $prov=>$kotas){
                 foreach($kotas as $kota=>$ongkir){
                     $listkota[$prov.' - '.$kota] = $ongkir*$weight;
@@ -110,8 +110,68 @@ class wpe_indoshipping {
             }
         return $listkota;
     }
+
 }
 
 $wpe_indoshipping = new wpe_indoshipping();
 $wpsc_shipping_modules[$wpe_indoshipping->getInternalName()] = $wpe_indoshipping;
+
+global $totalweight;
+$totalweight = $wpe_indoshipping->totalweight;
+
+/*
+ * Get Province DB
+ */
+
+function wpe_get_all_province(){
+    include 'daerah.db.php';
+    return $daerah;
+}
+
+/*
+ * Get City by Province
+ */
+function wpe_get_kota_by_provid($province_id){
+    include 'daerah.db.php';
+    $kotas = $daerah[$province_id];
+    return $kotas;
+}
+/*
+ * Load province name
+ */
+function wpe_load_province_html(){
+    global $totalweight;
+    $results = wpe_get_all_province();
+    $weight = $totalweight;
+
+	$html = '';
+	$html.='<select name="sel_propinsi" id="sel_propinsi" onchange="get_kota(this.value);">'."\n";
+	$html.='<option value="0" selected="selected">-- Pilih provinsi tujuan pengiriman --</option>'."\n";
+	foreach($results as $prov=>$kota){
+	$html.='<option value="'.$prov.'">'.$prov.'</option>'."\n";
+	}
+	$html.='</select><select name="sel_kota" id="sel_kota" onchange="switchmethod(this.value, \'wpe_indoshipping\');"><option value="0">-- Pilih provinsi terlebih dahulu --</option></select>';
+	die ($html);
+}
+
+/*
+ * Load City name
+ */
+function wpe_load_all_kota(){
+        $province_id = $_GET['prov_id'];
+                $listkota= array();
+                $kotas = wpe_get_kota_by_provid($province_id);
+                foreach($kotas as $keys=>$vals){
+                        $listkota[] = array('kota_id'=>$keys,'kota_name'=>$keys);
+                        }
+
+        die(json_encode($listkota));
+    }
+
+add_action('wp_ajax_GETKOTA','wpe_load_all_kota');
+add_action('wp_ajax_nopriv_GETKOTA','wpe_load_all_kota');
+
+add_action('wp_ajax_nopriv_LOADPROVINCE','wpe_load_province_html');
+add_action('wp_ajax_LOADPROVINCE','wpe_load_province_html');
+
 ?>
