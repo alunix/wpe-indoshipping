@@ -3,7 +3,7 @@ Contributors: ekaputra07
 Tags: wp e-commerce, shipping plugin, Indonesian Shipping plugin, JNE shipping, TIKI shipping
 Requires at least: 2.8
 Tested up to: 3.1.4
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 
 Plugin shipping Indonesia yang khusus untuk diintegrasikan dengan plugin WP-Ecommerce.
 
@@ -52,6 +52,10 @@ Karena wp e-commerce memiliki cara khusus untuk menampilkan ongkos kirim, sedang
 Maaf, plugin ini mutlak memerlukan javascript.
 
 == Changelog ==
+
+= 1.3.1 =
+* Bug fixed - Nilai shipping tidak otomatis saat kota muncul
+* Bug fixed - default ongkir tidak 0
 
 = 1.3.0 =
 * Menggunakan 2 dropdown untuk memilih provinsi dan kota

@@ -19,6 +19,9 @@ function get_kota(prov_id){
             for(i=0; i < kotas.length; i++){
                jQuery('select#sel_kota').append('<option value="'+prov_id+' - '+kotas[i].kota_name+'">'+kotas[i].kota_name+'</option>');
                 }
+
+            var first_kota = jQuery('select#sel_kota > option').val();
+            switchmethod(first_kota, 'wpe_indoshipping');
 	    });
 	}
 
