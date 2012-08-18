@@ -3,7 +3,7 @@
  Plugin Name: WPE Indoshipping
  Plugin URI: http://balitechy.com/wp-plugins/wp-ecommerce-indoshipping/
  Description: Indonesian typical Shipping Module For WP E-Commerce
- Version: 1.3.1
+ Version: 1.4.0
  Author: Putu Eka Putra
  Author URI: http://balitechy.com/
 */
@@ -157,7 +157,4 @@ class wpe_indoshipping {
 
 $wpe_indoshipping = new wpe_indoshipping();
 $wpsc_shipping_modules[$wpe_indoshipping->getInternalName() ] = $wpe_indoshipping;
-
-global $totalweight;
-$totalweight = $wpe_indoshipping->totalweight;
 ?>
